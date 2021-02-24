@@ -1,2 +1,3 @@
-# webcomponents-gwt-simple-example
-Web Components Simple Example with GWT
+# webcomponents-gwt-simple-examples
+
+Web Components Simple Examples with GWT
