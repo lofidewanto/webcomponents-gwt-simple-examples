@@ -8,6 +8,8 @@ import jsinterop.annotations.JsType;
 @JsType
 public class MyButton extends HTMLElement {
 
+    private static final String LABEL = "label";
+
     public MyButton() {
         HTMLElement.AttachShadowOptionsType options = new AttachShadowOptionsType() {
 
@@ -29,20 +31,20 @@ public class MyButton extends HTMLElement {
         shadowRoot.innerHTML = "<div class=\"container\"><button>My Button</button></div>";
     }
 
-    @JsProperty(name = "label")
+    @JsProperty(name = LABEL)
     public String getRef() {
-        String value = this.getAttribute("label");
+        String value = this.getAttribute(LABEL);
         return value == null ? "" : value;
     }
 
-    @JsProperty(name = "label")
+    @JsProperty(name = LABEL)
     public void setRef(String value) {
-        this.setAttribute("label", value);
+        this.setAttribute(LABEL, value);
     }
 
     @JsProperty
     public String[] getObservedAttributes() {
-        return new String[] { "label" };
+        return new String[] { LABEL };
     }
 
     @Override
