@@ -24,6 +24,6 @@ the problem is that the "subclass" calls its superclass, which is HTMLElement - 
 
 ## Example 2: use-my-button-gwt-example
 
-This example shows how to use already created Web Components in your Java / GWT project. In this case you have at the moment 3 possibilities in GWT:
+This example shows how to use already created Web Components in your Java / GWT project. In this case you have at the moment 2 possibilities in GWT:
 - You are using UIBinder with Standard GWT Widgets and any other UI frameworks based on this (GWT integrated Widgets, GWT Material Design).
 - You are using DOM / Elemento / Elemental2 with or without UI frameworks (DominoUI, ...)
