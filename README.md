@@ -21,3 +21,9 @@ Comments from Colin: See: https://gitter.im/gwtproject/gwt
 - It is possible to shim this - creating the actual custom element ctor in some cheater code which sets it up so you can call it from JS
 the problem is that the "subclass" calls its superclass, which is HTMLElement - but in es5, that means calling HTMLElement.call(this), roughly, instead of just saying "extends HTMLElement" and in the js constructor calling "super()"
 - The HTMLElement constructor doesn't permit calling the constructor as a function, only as a super constructor (its possible i am not mapping that error correctly, its easier to tell from the JS instead of the sourcemapped java, but the idea is right at least)
+
+## Example 2: use-my-button-gwt-example
+
+This example shows how to use already created Web Components in your Java / GWT project. In this case you have at the moment 3 possibilities in GWT:
+- You are using UIBinder with Standard GWT Widgets and any other UI frameworks based on this (GWT integrated Widgets, GWT Material Design).
+- You are using DOM / Elemento / Elemental2 with or without UI frameworks (DominoUI, ...)
