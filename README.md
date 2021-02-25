@@ -19,8 +19,8 @@ can use it by just adding the component ```<my-button></my-button>``` in the ind
 Comments from Colin: See: https://gitter.im/gwtproject/gwt
 - You can't do this in ES5 JS - and GWT 2.x won't generate ES6 classes. J2CL can do that.
 - It is possible to shim this - creating the actual custom element ctor in some cheater code which sets it up so you can call it from JS
-the problem is that the "subclass" calls its superclass, which is HTMLElement - but in es5, that means calling HTMLElement.call(this), roughly, instead of just saying "extends HTMLElement" and in the js constructor calling "super()"
-- The HTMLElement constructor doesn't permit calling the constructor as a function, only as a super constructor (its possible i am not mapping that error correctly, its easier to tell from the JS instead of the sourcemapped java, but the idea is right at least)
+the problem is that the "subclass" calls its superclass, which is HTMLElement - but in ES5, that means calling HTMLElement.call(this), roughly, instead of just saying "extends HTMLElement" and in the JS constructor calling "super()"
+- The HTMLElement constructor doesn't permit calling the constructor as a function, only as a super constructor (its possible I am not mapping that error correctly, its easier to tell from the JS instead of the sourcemapped Java, but the idea is right at least)
 
 ## Example 2: use-my-button-gwt-example
 
