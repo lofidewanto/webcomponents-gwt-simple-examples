@@ -34,25 +34,6 @@ public class MyButton extends HTMLElement {
     private ArrayList<String> field6 = new ArrayList<String>();
 
     public MyButton() {
-//        HTMLElement.AttachShadowOptionsType options = new AttachShadowOptionsType() {
-//
-//            private String mode;
-//
-//            @Override
-//            public void setMode(String mode) {
-//                this.mode = mode;
-//            }
-//
-//            @Override
-//            public String getMode() {
-//                return this.mode;
-//            }
-//        };
-//
-//        options.setMode("open");
-//        ShadowRoot shadowRoot = attachShadow(options);
-//        shadowRoot.innerHTML = "<div class=\"container\"><button>My Button</button></div>";
-
         // these will all be lost when used as an es5 type
         field1 = "hasValueFromCtor";
         field3 = field1.length();
@@ -60,7 +41,6 @@ public class MyButton extends HTMLElement {
     }
 
     public void init() {
-
         field1 = "hasValueFromCtor";
         field3 = field1.length();
         field5 = new ArrayList<String>();
