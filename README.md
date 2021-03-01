@@ -24,6 +24,8 @@ the problem is that the "subclass" calls its superclass, which is HTMLElement - 
 
 ### More Explanation
 
+...
+
 ### Building Web Component (WC): comments from Colin:
 
 - If you made a Web Component for every widget in GMD, domino-ui, etc, i think you'd regret it.
