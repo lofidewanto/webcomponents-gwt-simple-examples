@@ -24,7 +24,7 @@ the problem is that the "subclass" calls its superclass, which is HTMLElement - 
 
 ### More Explanation
 
-...
+... todo ...
 
 ### Building Web Component (WC): comments from Colin:
 
