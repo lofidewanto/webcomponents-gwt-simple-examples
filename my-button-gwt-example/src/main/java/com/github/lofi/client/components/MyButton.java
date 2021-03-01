@@ -10,7 +10,7 @@ import jsinterop.annotations.JsType;
 // this means we can have at most one constructor defined, at least as far as JS is concerned,
 // and that the ctor will be the main way to create intstances
 @JsType
-public class MyButton extends HTMLElement { 
+public class MyButton extends HTMLElement {
 
     private static final String LABEL = "label";
 
