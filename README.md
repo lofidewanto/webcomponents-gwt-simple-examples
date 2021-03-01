@@ -22,6 +22,8 @@ can use it by just adding the component ```<my-button></my-button>``` in the ind
 the problem is that the "subclass" calls its superclass, which is HTMLElement - but in ES5, that means calling HTMLElement.call(this), roughly, instead of just saying "extends HTMLElement" and in the JS constructor calling "super()"
 - The HTMLElement constructor doesn't permit calling the constructor as a function, only as a super constructor (its possible I am not mapping that error correctly, its easier to tell from the JS instead of the sourcemapped Java, but the idea is right at least)
 
+### More Explanation
+
 ### Building Web Component (WC): comments from Colin:
 
 - If you made a Web Component for every widget in GMD, domino-ui, etc, i think you'd regret it.
