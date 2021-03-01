@@ -3,9 +3,11 @@ package com.github.lofi.client.es5;
 import elemental2.core.JsArray;
 import elemental2.dom.DomGlobal;
 import elemental2.dom.HTMLElement;
-import java.util.function.Consumer;
+import jsinterop.annotations.*;
 import jsinterop.base.Js;
 import jsinterop.base.JsConstructorFn;
+
+import java.util.function.Consumer;
 
 import static elemental2.dom.DomGlobal.customElements;
 import static jsinterop.base.Js.asConstructorFn;
@@ -48,12 +50,10 @@ public class Es5CustomElementHelper {
 
     @JsType(isNative = true, name = "Object", namespace = JsPackage.GLOBAL)
     public static class Type<T> {
-
         @JsFunction
         public interface Constructor {
             Object construct();
         }
-
         @JsOverlay
         public static <T, U extends T> Type<? extends U> subtypeOf(Type<T> superclass, JsConstructorFn<U> realClass, Consumer<U> initializer) {
             Type<U> realType = Js.cast(realClass);
@@ -97,12 +97,10 @@ public class Es5CustomElementHelper {
             return Js.cast(this);
         }
     }
-
     @JsType(isNative = true, name = "Object", namespace = JsPackage.GLOBAL)
     public static class Prototype {
         public Object __proto__;
     }
-
     @JsType(isNative = true, namespace = JsPackage.GLOBAL)
     public static class Reflect {
         public static native Object construct(Object superClass, JsArray<?> args, Object target);

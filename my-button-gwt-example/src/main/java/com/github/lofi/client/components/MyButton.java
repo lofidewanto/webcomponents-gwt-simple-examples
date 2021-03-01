@@ -1,7 +1,17 @@
 package com.github.lofi.client.components;
 
+import elemental2.core.Function;
+import elemental2.core.JsArray;
+import elemental2.dom.DomGlobal;
+import elemental2.dom.HTMLElement;
 import elemental2.dom.ShadowRoot;
+import jsinterop.annotations.*;
+import jsinterop.base.Js;
+import jsinterop.base.JsConstructorFn;
+import jsinterop.base.JsPropertyMap;
+
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 import static elemental2.dom.DomGlobal.customElements;
 import static jsinterop.base.Js.asConstructorFn;
