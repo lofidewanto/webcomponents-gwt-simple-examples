@@ -1,16 +1,20 @@
 package com.github.lofi.client.es5;
 
-import elemental2.core.JsArray;
-import elemental2.dom.DomGlobal;
-import elemental2.dom.HTMLElement;
-import jsinterop.annotations.*;
-import jsinterop.base.Js;
-import jsinterop.base.JsConstructorFn;
+import static elemental2.dom.DomGlobal.customElements;
+import static jsinterop.base.Js.asConstructorFn;
 
 import java.util.function.Consumer;
 
-import static elemental2.dom.DomGlobal.customElements;
-import static jsinterop.base.Js.asConstructorFn;
+import elemental2.core.JsArray;
+import elemental2.dom.DomGlobal;
+import elemental2.dom.HTMLElement;
+import jsinterop.annotations.JsFunction;
+import jsinterop.annotations.JsIgnore;
+import jsinterop.annotations.JsOverlay;
+import jsinterop.annotations.JsPackage;
+import jsinterop.annotations.JsType;
+import jsinterop.base.Js;
+import jsinterop.base.JsConstructorFn;
 
 public class Es5CustomElementHelper {
 
@@ -50,6 +54,7 @@ public class Es5CustomElementHelper {
 
     @JsType(isNative = true, name = "Object", namespace = JsPackage.GLOBAL)
     public static class Type<T> {
+        
         @JsFunction
         public interface Constructor {
             Object construct();
@@ -101,6 +106,7 @@ public class Es5CustomElementHelper {
     public static class Prototype {
         public Object __proto__;
     }
+    
     @JsType(isNative = true, namespace = JsPackage.GLOBAL)
     public static class Reflect {
         public static native Object construct(Object superClass, JsArray<?> args, Object target);

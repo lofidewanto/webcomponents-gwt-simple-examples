@@ -1,25 +1,16 @@
 package com.github.lofi.client.components;
 
-import elemental2.core.Function;
-import elemental2.core.JsArray;
-import elemental2.dom.DomGlobal;
+import java.util.ArrayList;
+
 import elemental2.dom.HTMLElement;
 import elemental2.dom.ShadowRoot;
-import jsinterop.annotations.*;
-import jsinterop.base.Js;
-import jsinterop.base.JsConstructorFn;
-import jsinterop.base.JsPropertyMap;
-
-import java.util.ArrayList;
-import java.util.function.Consumer;
-
-import static elemental2.dom.DomGlobal.customElements;
-import static jsinterop.base.Js.asConstructorFn;
+import jsinterop.annotations.JsProperty;
+import jsinterop.annotations.JsType;
 
 // this means we can have at most one constructor defined, at least as far as JS is concerned,
 // and that the ctor will be the main way to create intstances
 @JsType
-public class MyButton extends HTMLElement {
+public class MyButton extends HTMLElement { 
 
     private static final String LABEL = "label";
 
