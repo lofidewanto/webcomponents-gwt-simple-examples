@@ -68,6 +68,7 @@
 						<arg>-compileReport</arg>
 						<arg>-style</arg>
 						<arg>PRETTY</arg>
+						<arg>-draftCompile</arg>
 					</compilerArgs>
 					<devmodeArgs>
 						<arg>-logLevel</arg>
