@@ -59,6 +59,7 @@ public class Es5CustomElementHelper {
         public interface Constructor {
             Object construct();
         }
+
         @JsOverlay
         public static <T, U extends T> Type<? extends U> subtypeOf(Type<T> superclass, JsConstructorFn<U> realClass, Consumer<U> initializer) {
             Type<U> realType = Js.cast(realClass);
@@ -102,6 +103,7 @@ public class Es5CustomElementHelper {
             return Js.cast(this);
         }
     }
+    
     @JsType(isNative = true, name = "Object", namespace = JsPackage.GLOBAL)
     public static class Prototype {
         public Object __proto__;
