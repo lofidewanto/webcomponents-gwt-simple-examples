@@ -15,12 +15,17 @@ public class MyButton extends HTMLElement {
     private static final String LABEL = "label";
 
     private String field1;
-    private String field2 = "hasValueFromInitializer";// this _may_ be lost when used as an es5 type, don't risk it
+
+    // this _may_ be lost when used as an es5 type, don't risk it
+    private String field2 = "hasValueFromInitializer";
 
     private int field3;
-    private int field4 = 1;// this _may_ be lost when used as an es5 type, don't risk it
+
+    // this _may_ be lost when used as an es5 type, don't risk it
+    private int field4 = 1;
 
     private ArrayList<String> field5;
+    
     // this will be lost when used as an es5 type
     private ArrayList<String> field6 = new ArrayList<String>();
 
