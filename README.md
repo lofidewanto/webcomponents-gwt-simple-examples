@@ -60,6 +60,18 @@ In contrast, UIBinder or just calling a setter (UIBinder just emits a setter) wi
 
 ## Example 2: my-button-j2cl-es5-example
 
+To run the examples: just go to the Maven project directory and run
+
+```
+mvn j2cl:build
+```
+
+and open the index.html in following directory (without server, just double click the file)
+
+```
+target/my-button-j2cl-es5-example-1.0.0-SNAPSHOT/index.html
+```
+
 ...
 
 ## Example 3: my-button-j2cl-es6-example
