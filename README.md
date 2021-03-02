@@ -72,11 +72,11 @@ and open the index.html in following directory (without server, just double clic
 target/my-button-j2cl-es5-example-1.0.0-SNAPSHOT/index.html
 ```
 
-...
+... Todo ...
 
 ## Example 3: my-button-j2cl-es6-example
 
-...
+... Todo ...
 
 ## Example 4: use-my-button-gwt-example
 
@@ -88,3 +88,5 @@ This example shows how to use already created Web Components in your Java / GWT 
 
 - I use widgets, so a have a Widget subclass whose ctor (constructor) calls setElement(Document.get().createElement("my-wc")), and I map the element's API as a native type (I actually used an interface that extends EventTarget, as I don't really care about the class itself, which BTW could be "private" in JS) and cast the result of getElement().
 - In the constructor, I also have a DomGlobal.customElements.whenDefined("my-wc").then(ignored -> { /* do something */; return null; }); to account for the possible async loading of the JS (and with the interface for the native type, this means I don't care if I get an UnknownHTMLElement or the actual element; as long as I don't call specific methods but only set properties and attach event handlers).
+
+... Todo ...
