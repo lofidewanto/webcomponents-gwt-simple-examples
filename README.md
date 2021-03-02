@@ -58,11 +58,15 @@ In contrast, UIBinder or just calling a setter (UIBinder just emits a setter) wi
 - For a small app you'll never care that you're adding 10 or 100kb per widget.
 
 
-## Example 2: my-button-j2cl-example
+## Example 2: my-button-j2cl-es5-example
 
 ...
 
-## Example 3: use-my-button-gwt-example
+## Example 3: my-button-j2cl-es6-example
+
+...
+
+## Example 4: use-my-button-gwt-example
 
 This example shows how to use already created Web Components in your Java / GWT project. In this case you have at the moment 2 possibilities in GWT:
 - You are using UIBinder with Standard GWT Widgets and any other UI frameworks based on this (GWT integrated Widgets, GWT Material Design).
