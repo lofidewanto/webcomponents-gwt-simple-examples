@@ -1,6 +1,28 @@
 # webcomponents-gwt-simple-examples
 
-Web Components Simple Examples with GWT
+Web Components Simple Examples with GWT and J2CL
+
+## General Information ECMAScript ES5 and ES6
+
+- What is JavaScript, what is ECMAScript? See: https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
+- What is the difference between ES5 and ES6? See: https://www.geeksforgeeks.org/difference-between-es5-and-es6/
+
+
+## Transpilers GWT and J2CL
+- GWT 2.x could only generate ES5 JS code
+- J2CL could generate ES6 JS code
+
+
+## Web Components (WC)
+
+- Introduction to Web Components: https://www.webcomponents.org/introduction
+- WC only works with ES6 or maybe using Custom Elements Polyfill: https://stackoverflow.com/questions/45747646/what-is-the-es5-way-of-writing-web-component-classes
+- In this repo I try to create some examples of how doing WC with GWT / J2CL. Thanks to Colin (https://github.com/niloc132) and Thomas (https://github.com/tbroyer) for all the tips and examples from https://gitter.im/gwtproject/gwt! 
+
+
+## Example 1: my-button-gwt-example
+
+### Running Example
 
 To run the examples: just go to the Maven project directory and run
 
@@ -8,7 +30,7 @@ To run the examples: just go to the Maven project directory and run
 mvn gwt:generate-module gwt:devmode
 ```
 
-## Example 1: my-button-gwt-example
+### Explanation Example 1
 
 This example shows how to build Web Component completely in Java / GWT / JsInterop. Afterwards you
 can use it by just adding the component ```<my-button></my-button>``` in the index.html
@@ -17,14 +39,11 @@ can use it by just adding the component ```<my-button></my-button>``` in the ind
 - Also using this GWT / J2CL example: https://github.com/vegegoku/gwt-j2cl-mind-palace/tree/poc-gwt-j2cl-web-component/gwt-j2cl-web-component
 
 ### Comments from Colin: See: https://gitter.im/gwtproject/gwt
+
 - You can't do this in ES5 JS - and GWT 2.x won't generate ES6 classes. J2CL can do that.
-- It is possible to shim this - creating the actual custom element ctor in some cheater code which sets it up so you can call it from JS
+- It is possible to shim this - creating the actual custom element ctor (constructor) in some cheater code which sets it up so you can call it from JS
 the problem is that the "subclass" calls its superclass, which is HTMLElement - but in ES5, that means calling HTMLElement.call(this), roughly, instead of just saying "extends HTMLElement" and in the JS constructor calling "super()"
-- The HTMLElement constructor doesn't permit calling the constructor as a function, only as a super constructor (its possible I am not mapping that error correctly, its easier to tell from the JS instead of the sourcemapped Java, but the idea is right at least)
-
-### More Explanation
-
-... todo ...
+- The HTMLElement constructor doesn't permit calling the constructor as a function, only as a super constructor (its possible I am not mapping that error correctly, its easier to tell from the JS instead of the sourcemapped Java, but the idea is right at least).
 
 ### Building Web Component (WC): comments from Colin:
 
@@ -38,7 +57,12 @@ In contrast, UIBinder or just calling a setter (UIBinder just emits a setter) wi
 - It could also be considered a feature that this happens, this degree of isolation and keeping the API consistent, since perhaps you don't want the app to compile like this, so that each Web Component can use a different version of whatever libraries it wants, but again, I think that will surprise you when you see how big your app gets.
 - For a small app you'll never care that you're adding 10 or 100kb per widget.
 
-## Example 2: use-my-button-gwt-example
+
+## Example 2: my-button-j2cl-example
+
+...
+
+## Example 3: use-my-button-gwt-example
 
 This example shows how to use already created Web Components in your Java / GWT project. In this case you have at the moment 2 possibilities in GWT:
 - You are using UIBinder with Standard GWT Widgets and any other UI frameworks based on this (GWT integrated Widgets, GWT Material Design).
