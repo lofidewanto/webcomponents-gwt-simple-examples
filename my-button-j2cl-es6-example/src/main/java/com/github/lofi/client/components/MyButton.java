@@ -50,7 +50,7 @@ public class MyButton extends HTMLElement {
     }
 
     @JsProperty
-    public String[] getObservedAttributes() {
+    public static String[] getObservedAttributes() {
         return new String[] { LABEL };
     }
 
