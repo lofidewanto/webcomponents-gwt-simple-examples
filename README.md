@@ -84,6 +84,10 @@ It works well and show the same result as Example 1, the main difference is the 
 
 ... Todo ...
 
+### How to Check for the Result: ES5 or ES6?
+
+Take a look at the generated JavaScript. if you see the class keyword, or super(), or constructor(), you know it is ES6.
+
 
 ## Example 4: use-my-button-gwt-example
 
