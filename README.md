@@ -22,7 +22,7 @@ Web Components Simple Examples with GWT and J2CL
 
 ## Example 1: my-button-gwt-example
 
-### Running Example
+### Running Example 1
 
 To run the examples: just go to the Maven project directory and run
 
@@ -60,6 +60,8 @@ In contrast, UIBinder or just calling a setter (UIBinder just emits a setter) wi
 
 ## Example 2: my-button-j2cl-es5-example
 
+### Running Example 2
+
 To run the examples: just go to the Maven project directory and run
 
 ```
@@ -72,11 +74,16 @@ and open the index.html in following directory (without server, just double clic
 target/my-button-j2cl-es5-example-1.0.0-SNAPSHOT/index.html
 ```
 
-... Todo ...
+### Explanation Example 2
+
+This example is just similar to Example 1 but we use J2CL to transpile to ES5.
+It works well and show the same result as Example 1, the main difference is the transpiler we use.
+
 
 ## Example 3: my-button-j2cl-es6-example
 
 ... Todo ...
+
 
 ## Example 4: use-my-button-gwt-example
 
