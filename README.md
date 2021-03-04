@@ -103,7 +103,7 @@ workaround code to create a Web Component. If you see this code: [MyButton.java]
 
 ### How to Check for the Result: ES5 or ES6?
 
-Take a look at the generated JavaScript. if you see the class keyword, or super(), or constructor(), you know it is ES6.
+Take a look at the generated JavaScript. if you see the class keyword, or ```super()```, or ```constructor()```, you know it is ES6.
 
 
 ## Example 4: use-my-button-gwt-example
