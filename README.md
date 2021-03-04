@@ -82,7 +82,24 @@ It works well and show the same result as Example 1, the main difference is the 
 
 ## Example 3: my-button-j2cl-es6-example
 
-... Todo ...
+### Running Example 2
+
+To run the examples: just go to the Maven project directory and run
+
+```
+mvn j2cl:build
+```
+
+and open the index.html in following directory (without server, just double click the file)
+
+```
+target/my-button-j2cl-es6-example-1.0.0-SNAPSHOT/index.html
+```
+
+### Explanation Example 2
+
+This example uses J2CL to transpile to ES6 JavaScript. With this in mind we can remove all the
+workaround code to create a Web Component. If you see this code: [MyButton.java](https://github.com/lofidewanto/webcomponents-gwt-simple-examples/blob/main/my-button-j2cl-es6-example/src/main/java/com/github/lofi/client/components/MyButton.java)
 
 ### How to Check for the Result: ES5 or ES6?
 
