@@ -99,7 +99,7 @@ target/my-button-j2cl-es6-example-1.0.0-SNAPSHOT/index.html
 ### Explanation Example 2
 
 This example uses J2CL to transpile to ES6 JavaScript. With this in mind we can remove all the
-workaround code to create a Web Component. If you see this code: [MyButton.java](https://github.com/lofidewanto/webcomponents-gwt-simple-examples/blob/main/my-button-j2cl-es6-example/src/main/java/com/github/lofi/client/components/MyButton.java)
+workaround code to create a Web Component. If you see this code: [MyButton.java](https://github.com/lofidewanto/webcomponents-gwt-simple-examples/blob/main/my-button-j2cl-es6-example/src/main/java/com/github/lofi/client/components/MyButton.java) it looks now very clean and very similar to the JavaScript WC code here: https://www.robinwieruch.de/web-components-tutorial.
 
 ### How to Check for the Result: ES5 or ES6?
 
