@@ -11,6 +11,7 @@ Contents
   * [Example 3: my-button-j2cl-es6-example](#example-3--my-button-j2cl-es6-example)
   * [Example 4: use-my-button-gwt-example](#example-4--use-my-button-gwt-example)
 
+---
 
 ## General Information ECMAScript ES5 and ES6
 
