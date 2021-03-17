@@ -1,6 +1,7 @@
 package com.github.lofi.client.components;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 import elemental2.dom.HTMLElement;
 import elemental2.dom.ShadowRoot;
@@ -11,6 +12,8 @@ import jsinterop.annotations.JsType;
 // and that the ctor will be the main way to create intstances
 @JsType
 public class MyButton extends HTMLElement {
+
+    private static Logger logger = Logger.getLogger(MyButton.class.getName());
 
     private static final String LABEL = "label";
 
@@ -43,22 +46,11 @@ public class MyButton extends HTMLElement {
     }
 
     public void connectedCallback() {
-        HTMLElement.AttachShadowOptionsType options = new AttachShadowOptionsType() {
-
-            private String mode;
-
-            @Override
-            public void setMode(String mode) {
-                this.mode = mode;
-            }
-
-            @Override
-            public String getMode() {
-                return this.mode;
-            }
-        };
-
+        logger.info("MyButton constructor...");
+        
+        AttachShadowOptionsType options = AttachShadowOptionsType.create();
         options.setMode("open");
+
         ShadowRoot shadowRoot = attachShadow(options);
         shadowRoot.innerHTML = "<div class=\"container\"><button>My Button</button></div>";
         shadowRoot.firstElementChild.setAttribute("title", toString());

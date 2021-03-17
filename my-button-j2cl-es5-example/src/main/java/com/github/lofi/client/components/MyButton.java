@@ -43,22 +43,9 @@ public class MyButton extends HTMLElement {
     }
 
     public void connectedCallback() {
-        HTMLElement.AttachShadowOptionsType options = new AttachShadowOptionsType() {
-
-            private String mode;
-
-            @Override
-            public void setMode(String mode) {
-                this.mode = mode;
-            }
-
-            @Override
-            public String getMode() {
-                return this.mode;
-            }
-        };
-
+        AttachShadowOptionsType options = AttachShadowOptionsType.create();
         options.setMode("open");
+        
         ShadowRoot shadowRoot = attachShadow(options);
         shadowRoot.innerHTML = "<div class=\"container\"><button>My Button</button></div>";
         shadowRoot.firstElementChild.setAttribute("title", toString());
