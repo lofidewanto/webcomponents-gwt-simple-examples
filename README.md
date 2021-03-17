@@ -20,8 +20,8 @@ Contents
 
 
 ## Transpilers GWT and J2CL
-- GWT 2.x could only generate ES5 JS code
-- J2CL could generate ES5 or ES6 JS code
+- GWT 2.x can only generate ES5 JS code
+- J2CL can generate ES5 or ES6 JS code
 
 
 ## Web Components (WC)
