@@ -6,7 +6,7 @@ Contents
   * [General Information ECMAScript ES5 and ES6](#general-information-ecmascript-es5-and-es6)
   * [Transpilers GWT and J2CL](#transpilers-gwt-and-j2cl)
   * [Web Components (WC)](#web-components--wc-)
-  * [Example 1: my-button-gwt-example](#example-1:-my-button-gwt-example)
+  * [Example 1: my-button-gwt-example](#example-1--my-button-gwt-example)
   * [Example 2: my-button-j2cl-es5-example](#example-2--my-button-j2cl-es5-example)
   * [Example 3: my-button-j2cl-es6-example](#example-3--my-button-j2cl-es6-example)
   * [Example 4: use-my-button-gwt-example](#example-4--use-my-button-gwt-example)
