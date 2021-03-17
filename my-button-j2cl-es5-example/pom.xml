@@ -54,13 +54,16 @@
 			<plugin>
 				<groupId>com.vertispan.j2cl</groupId>
 				<artifactId>j2cl-maven-plugin</artifactId>
-				<version>0.16-SNAPSHOT</version>
+				<version>0.17-SNAPSHOT</version>
 				<executions>
 					<execution>
 						<phase>generate-resources</phase>
 						<goals>
 							<goal>build</goal>
 						</goals>
+						<configuration>
+							<languageOut>ECMASCRIPT5</languageOut>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
