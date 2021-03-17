@@ -3,7 +3,6 @@
 Web Components Simple Examples with GWT and J2CL
 
 Contents
-- [webcomponents-gwt-simple-examples](#webcomponents-gwt-simple-examples)
   * [General Information ECMAScript ES5 and ES6](#general-information-ecmascript-es5-and-es6)
   * [Transpilers GWT and J2CL](#transpilers-gwt-and-j2cl)
   * [Web Components (WC)](#web-components--wc-)
