@@ -28,7 +28,17 @@ Contents
 
 - Introduction to Web Components: https://www.webcomponents.org/introduction
 - WC only works with ES6 or maybe using Custom Elements Polyfill: https://stackoverflow.com/questions/45747646/what-is-the-es5-way-of-writing-web-component-classes
-- In this repo I try to create some examples of how doing WC with GWT / J2CL. Thanks to Colin (https://github.com/niloc132) and Thomas (https://github.com/tbroyer) for all the tips and examples from https://gitter.im/gwtproject/gwt! 
+- In this repo I try to create some examples of how doing WC with GWT / J2CL. Thanks to Colin (https://github.com/niloc132) and Thomas (https://github.com/tbroyer) for all the tips and examples from https://gitter.im/gwtproject/gwt!
+
+## Web Components Summary 
+
+The "Web Component" spec is actually 4ish specs, though one didn't pan out and is deprecated and already removed from all browsers
+
+- Custom elements - the ability to make a new html tag which calls your code, and lifecycle hooks to find out when it is attached and detached to the dom, and notification when (specific) attributes are changed
+- Shadow DOM - a feature where you can "hide" child elements from the rest of the dom, enabling css to stop cascading (maybe we call it cs now?), offer a layer of abstraction so that other dom queries don't peek inside or modify your content
+- HTML templates, a feature in two parts: a document fragment tag, to help with copying content, and a "slot" tag to allow child tags of a custom component to have a specified place to exist in the shadow dom of a custom element
+
+Technically these features can be used individually, and you you can just pick and choose what you want, but as best as i can tell you really do need them all together. 
 
 
 ## Example 1: my-button-gwt-example
